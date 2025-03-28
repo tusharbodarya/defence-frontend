@@ -1,0 +1,296 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom class to increase the size of the radio button */
+.radio-large {
+  width: 24px;
+  /* Adjust the width as needed */
+  height: 24px;
+  /* Adjust the height as needed */
+}
+
+.nav-inner {
+  /* background-image: url('./assets/header.png'); */
+  background-image: url("./assets/NewHeader.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: content-box;
+  background-color: #11498d;
+}
+
+@media (min-width: 1024px) {
+  .nav-inner {
+    /* background-image: url('./assets/header.png'); */
+    background-image: url("./assets/NewHeader.jpeg");
+    background-size: 103%;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-origin: content-box;
+    background-color: #11498d;
+  }
+}
+
+@media (min-width: 1280px) {
+  .nav-inner {
+    /* background-image: url('./assets/header.png'); */
+    background-image: url("./assets/NewHeader.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-origin: content-box;
+    background-color: #11498d;
+  }
+}
+
+/* .nav-innermini{
+  background-image: url('./assets/mobileheader.png');
+  background-repeat: no-repeat;
+  background-origin: content-box;
+} */
+.navmenu {
+  z-index: 1;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-slider button {
+  display: none !important;
+}
+
+.custom-arrow {
+  display: block;
+  position: absolute;
+  top: 7%;
+  /* transform: translate(0, -40%); */
+  padding: 9px;
+  width: 50px;
+  margin: 0 auto;
+  height: 50px;
+  background-color: rgb(26, 116, 226, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
+  /* z-index: 1; */
+}
+
+.major .custom-arrow {
+  display: none !important;
+}
+
+@media (min-width: 650px) {
+  .custom-arrow {
+    display: none !important;
+    position: absolute;
+    /* top: 7%; */
+    /* transform: translate(0, -40%); */
+    padding: 9px;
+    width: 50px;
+    margin: 0 auto;
+    height: 50px;
+    background-color: rgb(26, 116, 226, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
+    /* z-index: 1; */
+  }
+}
+
+.next-arrow {
+  right: 0px;
+}
+
+.prev-arrow {
+  left: 0px;
+}
+
+/* src/styles.css */
+.text-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-wrap {
+  flex: 0 0 auto;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.text-content {
+  flex: 1 1 auto;
+}
+
+.clip-triangle {
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+/* sticky navbar  */
+/* Add this CSS */
+.group-hover ul {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.group-hover:hover ul,
+.group-hover ul:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+.swal2-container,
+.swal2-center,
+.swal2-backdrop-show {
+  /* filter: blur(8px) !important; */
+  /* -webkit-filter: blur(8px) !important; */
+  backdrop-filter: blur(8px) !important;
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.swal2-popup,
+.swal2-modal,
+.blur-popup,
+.swal2-show {
+  /* background-color: rgb(0, 0, 0); */
+  /* Fallback color */
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  /* Black w/opacity/see-through */
+  z-index: 2;
+}
+
+/* Custom style for SweetAlert popup width */
+.custom-swal-popup {
+  max-width: 850px !important;
+  /* Increase width as needed */
+  width: 100%;
+  /* Width relative to screen size */
+}
+
+
+/* Custom class to hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* For Internet Explorer and Edge */
+  scrollbar-width: none;
+  /* For Firefox */
+}
+
+/* .list-lower-alpha */
+.list-lower-alpha {
+  list-style-type: lower-alpha;
+}
+
+.list-upper-alpha {
+  list-style-type: upper-alpha;
+}
+
+.file-upload-container {
+  position: relative;
+  margin-top: 20px;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 8px;
+  background-color: #f3f3f3;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.4s ease;
+}
+
+.upload-complete {
+  margin-top: 10px;
+  color: #4caf50;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.green-tick {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+/* Gloving Border1 */
+.fancy1 {
+  --offset: 3px;
+
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  border: none;
+  display: inline-block;
+  /* padding: 0.5rem 2rem; */
+  padding: 0.5rem;
+  text-align: center;
+
+  background-color: transparent;
+  cursor: pointer;
+  /* color: #084466; */
+  border-radius: 8px;
+  /* Ensure button itself has rounded corners */
+}
+
+/* Conic gradient */
+.fancy1::before {
+  content: "";
+  background: conic-gradient(from 180deg at 50% 50%,
+      transparent 270deg,
+      rgba(58, 127, 255, 0.851),
+      transparent);
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  animation: rotate 4s linear infinite;
+  z-index: -2;
+  border-radius: 50%;
+  /* Smooth circular gradient */
+}
+
+/* Overlay */
+.fancy1::after {
+  content: "";
+  background: inherit;
+  position: absolute;
+  top: var(--offset);
+  left: var(--offset);
+  right: var(--offset);
+  bottom: var(--offset);
+  z-index: -1;
+  border-radius: inherit;
+  /* Use inherit to match the button's border radius */
+  background-color: #dcebf3;
+  /* Adjust background for better contrast */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
