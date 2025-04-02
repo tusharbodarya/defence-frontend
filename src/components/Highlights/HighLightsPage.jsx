@@ -46,7 +46,7 @@ const HighLightsPage = () => {
                 <div className='flex flex-col gap-12'>
                     <div className="flex items-center justify-center gap-6">
                         <a
-                            href="https://youtu.be/lh7amgWrqKo"
+                            href="https://youtu.be/1TeVHepgw3E"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="relative"
@@ -55,7 +55,7 @@ const HighLightsPage = () => {
                             <img src={youTubeThumbnail1} alt="YouTube Link" className=" h-auto rounded-3xl" />
                         </a>
                         <a
-                            href="https://youtu.be/lh7amgWrqKo"
+                            href="https://youtu.be/1TeVHepgw3E"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="relative"
